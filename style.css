@@ -129,6 +129,6 @@ body {
     .pricing-table {
         flex-direction: column;
         width:100%;
-        max-width: 400px;
+        max-width: 300px;
     }
 }
