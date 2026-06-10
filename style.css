@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: rgb(0, 145, 255);
+
+}
+
+.pricing-table {
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin: 20px;
+}
+
+.pricing-table .price {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1;
+    transition: transform 0.3s ease;
+
+}
+
+.price:hover {
+    transform: translateY(-10px)
+}
+
+.plan-price {
+
+    width: 100%;
+    height: 200px;
+    clip-path: polygon(0 0,
+            100% 0,
+            100% 55%,
+            50% 100%,
+            0 55%);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.price .basic {
+    background: rgb(0, 128, 58);
+}
+
+.price .extended {
+    background: rgba(255, 0, 0, 0.707);
+}
+
+.price .premium {
+    background: rgb(135, 175, 235);
+}
+
+.plan-price .basic-price {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.plan-price .value {
+    margin-top: 10px;
+    font-size: 40px;
+    font-weight: 600;
+    display: flex;
+    align-items: end;
+    gap: 4px;
+}
+
+.plan-price .dollar,
+.decimal {
+    font-size: 18px;
+}
+
+.price .text {
+    margin: 30px auto;
+    color: #333;
+    text-align: center;
+}
+
+.features {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    border-top: 1px solid #e5e5e5;
+}
+
+.features .fa-check {
+    color: green;
+}
+
+.features .fa-xmark {
+    color: red;
+}
+
+.purchase {
+    display: inline-block;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 100%;
+    letter-spacing: 1.5px;
+}
+
+.features p {
+    color: #333;
+}
+
+
+/* =========for small Screen================= */
+
+@media (max-width:800px) {
+    .pricing-table {
+        flex-direction: column;
+    }
+}
